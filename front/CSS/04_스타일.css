@@ -1,0 +1,37 @@
+/* 글시체 1, 없으면 2로 적용 */
+
+h1 {
+  font-family: "용용체", "궁시체", "굴림체";
+  /* 텍스트 크기 */
+  font-size: 64px;
+  /* 텍스트 두께 */
+  font-weight: 900;
+  /* 글자 스타일 */
+  font-style: italic;
+  /* 글자색 */
+  color: black;
+  /* 데코레이션 */
+  text-decoration: none;
+  /* 트랜스폼 대/소 문자/ */
+  text-transform: capitalize;
+  /* 그림자 */
+  /* x,축y축, 번짐 정도*/
+  text-shadow: 0px 0px 4px #ecc,
+    0px -5px 4px #ff3 2px -10px 6px #fd3 -2px -15px 11px #f80 2px -19px 18px #f20;
+  /* 글자 간격 */
+  letter-spacing: 10px;
+  /* 단어 간격 */
+  word-spacing: 100px;
+}
+p {
+  /* 문단 스타일 */
+  text-align: justify;
+}
+div {
+  background-color: grey;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

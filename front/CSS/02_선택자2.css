@@ -1,0 +1,57 @@
+h1 {
+  background-color: red;
+}
+div[name="div04"],
+div[name="div01"] {
+  color: blue;
+  font-weight: 900;
+}
+
+#test02 > h4 {
+  background-color: red;
+}
+
+#test03 + h5 {
+  background-color: red;
+}
+
+#test04-1:hover {
+  background-color: violet;
+}
+
+#test04-2:active {
+  background-color: violet;
+}
+
+#test05-1:checked {
+  width: 50px;
+  height: 50px;
+}
+#test05-2:focus {
+  background-color: gray;
+}
+/* class가 5인 tag중 disabled 만 적용됨 */
+.test05:disabled {
+  border: 3px solid red;
+}
+
+#test06 {
+  border: 5px solid black;
+}
+/* 홀수번째만 적용 되게  test06 의 자손 p,span*/
+#test06 > p:nth-child(2n-1) {
+  background-color: gray;
+}
+#test07 {
+  border: 3px dashed black;
+}
+#test07 > p:last-of-type {
+  background-color: grey;
+}
+#test09 > p::after {
+  content: "zzz";
+  background-color: orange;
+}
+#test10 > p:not(.kh) {
+  background-color: skyblue;
+}

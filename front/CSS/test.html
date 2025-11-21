@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: yellowgreen;
+            color: aqua;
+            width: 300px;
+            height: 300px;
+        }
+        #a {
+            background-color: green;
+            color: azure;
+            width: 200px;
+            height: 200px;
+        }
+         #a {
+            background-color: grey;
+            color: azure;
+            width: 200px;
+            height: 200px;
+        }
+        /* 둘다 id 선택자일경우 밑에있는게 우선순위다. */
+        #b{
+            background-color: violet;
+        }
+        .kh
+        {
+            background-color: bisque;
+            color: blue;
+            width: 500px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>연습장</h1>
+    <h2 id="a">안녕하세요</h2>
+    <h2 class="kh">안녕하세요</h2>
+     <h2 id="b" class="kh">안녕하세요</h2>  
+    <!-- class 는 유일하지않아도됨 중복 가능 id 선택자가 우선순위가 높다-->
+</body>
+</html>

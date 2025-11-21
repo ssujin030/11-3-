@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼관련태그</title>
+    <style></style>
+  </head>
+  <body>
+    <h1>폼관련태그</h1>
+
+    <hr />
+
+    <pre>
+      
+        "form" 태그
+            form 태그는 html에서 사용자가 입력할 수 있는 양식을 제공하는 태그이다.
+            form 태그 내의 "input" 태그들을 통해서 사용자가 입력한 정보를 서버로 넘기면서 요청하는 역할을 한다.
+
+        * 속성
+            action : 폼 내에 입력된 값들을 전달할 서버에 대한 내용을 기입한다.
+            method : get / post 방식으로 전송 방식을 지정한다.
+                get : 서버에 사용자가 입력한 값들을 URL에 노출시켜서 전달하는 방식
+                post : 서버에 사용자가 입력한 값들을 URL에 노출시키지 않고 전달하는 방식
+            autocomplete : 이전 입력 내용을 출력하는 기능(default : on, 각 태그별로 지정 가능)
+       
+    </pre>
+    <hr />
+    <h2>form 기본구조</h2>
+    <form action="서버의 주소">
+      <input type="text" />
+      <input type="submit" />
+      <hr />
+      <h2>다양한 인풋 태그들</h2>
+      <input
+        type="text"
+        placeholder="아이디를 입력하세요"
+        value="user01"
+        name="userId"
+      />
+      <!--  disabled 비활성화 input에서 사용 -->
+      <br />
+      <input type="number" placeholder="a" value="1" max="5" min="" />
+      <br />
+      <input type="number" placeholder="0" value="1" max="5" min="0" />
+      <br />
+      <input type="range" min="0" max="100" step="20" value />
+      <br />
+      <input type="date" />
+      <br />
+      <input type="month" />
+      <br />
+      <input type="week" />
+      <br />
+      <input type="time" />
+      <br />
+      <input type="datetime-local" />
+      <br />
+      <input type="tel" />
+      <br />
+      <lable>코딩<input type="checkbox" name="hc" /></lable>
+      <label> 공부<input type="checkbox" name="hobby" checked /></label>
+      <label> 프로그래밍<input type="checkbox" name="hobby" /></label>
+      <br />
+      <label> 코딩<input type="radio" name="hobby" /></label>
+      <label>공부<input type="radio" name="hobby" /></label>
+      <label> 프로그래밍<input type="radio" name="hobby" /></label>
+      <br />
+      <label><input type="color" /></label>
+      <label><input type="file" multiple /></label>
+      <hr />
+      <!-- <button>그냥 버튼</button> form 태그 안에 있어있는 버튼은 제출버튼역할을 한다
+      form 태그안에 그냥 버튼을 만들고 싶으면 <input type="button"> 으로 만들어야한다 -->
+      <hr />
+
+      <input type="button" value="버튼임" />
+
+      <hr />
+
+      <select name="national">
+        <option value="ko">한국</option>
+        <option selected value="jp">몽골</option>
+        <!-- 기본 으로 두는 값 -->
+        <option value="ch">중국</option>
+      </select>
+
+      <hr />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
