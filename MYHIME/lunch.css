@@ -1,0 +1,111 @@
+body{
+    background-color: pink;
+    color: white;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    font-size: 50px;
+    padding-bottom: 100px;
+}
+h1:hover{
+    color: rgb(132, 116, 146);
+    transition: all 0.3s ease;
+}
+
+.w1 {
+    display: inline-block;
+    font-size: 40px;
+    overflow: hidden;
+}
+p{
+    font-size: 20px;
+}
+#top{
+     display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+#top > label:hover{
+    background-color: white;
+    color: rgb(151, 83, 151);
+    font-size: 50px;
+    border-radius: 10%;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+#top > label:active{
+    background-color: rgb(110, 73, 119);
+    color: white;
+    font-size: 50px;
+    border-radius: 10%;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.w1>img{
+    width: 10vw;
+    padding-top: 10%;
+   
+ 
+}
+#list {
+    width: 30vw;
+    height: 30vh;
+    font-size: 25px;
+    background-color: plum;
+    text-align: center;
+   border-collapse: collapse;
+  
+   color: white;
+  
+}
+td > a{
+    color: rgb(151, 83, 115);
+    text-decoration: none;
+    overflow: hidden;
+    
+}
+td > a:hover{
+    color: rgb(255, 234, 244);
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    
+}
+
+
+
+
+/* 기본적으로 숨김 */
+.kfood, .cfood, .jfood, .ufood {
+    display: none;
+    clear:both;
+}
+
+/* 한식 */
+#k-btn:checked ~ .kfood {
+    display: block;
+}
+
+/* 중식 */
+#c-btn:checked ~ .cfood {
+    display: block;
+}
+
+/* 일식 */
+#j-btn:checked ~ .jfood {
+    display: block;
+}
+
+/* 양식 */
+#u-btn:checked ~ .ufood {
+    display: block;
+}
+
+/* 체크박스는 완전히 숨김 */
+input[type="checkbox"] {
+    display: none;
+}
